@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: auto;
+}
+
+#display {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 1.5em;
+  border: none;
+  border-top: #ccc 1px solid;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+button.operator {
+  background-color: #fcb040;
+  color: #fff;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+button.operator:hover {
+  background-color: #e08c00;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #3498db; /* Blue color for the title */
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+.subtitle a {
+  color: #3498db; /* Blue color for the author link */
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
+}
